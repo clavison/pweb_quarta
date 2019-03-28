@@ -41,7 +41,7 @@ public class EstadoService {
 
 		//LISTAR TODAS
 		public List<Estado> findAll(){
-			return rep.findAll();
+			return rep.findAllByOrderByNome();
 		}
 
 }
