@@ -76,5 +76,10 @@ public class ClienteService {
 		enderecoRepository.saveAll(obj.getEnderecos());
 		return obj;
 	}
+	
+	public Cliente findByEmail(String email) {
+		Cliente obj = repo.findByEmail(email);
+		return obj;
+	}
 
 }
