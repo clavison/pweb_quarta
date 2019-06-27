@@ -15,6 +15,11 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD")
                 .allowCredentials(true)
         ;
+        registry.addMapping("/**")
+        .allowedOrigins("https://front-quarta-8023.herokuapp.com")
+        .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD")
+        .allowCredentials(true)
+        ;
     }
 
 }
